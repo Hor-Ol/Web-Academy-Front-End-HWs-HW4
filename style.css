@@ -1,0 +1,124 @@
+:root {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+body {
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180rem;
+  width: 100vw;
+  margin: 0;
+}
+
+main {
+  width: 50%;
+  height: 95%;
+  /* background-color: lightblue; */
+}
+
+.calendar-day-container {
+  height: 100%;
+  margin: 0 6rem;
+}
+
+.calendar-day-head {
+  height: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2rem solid #f3f3f3;
+}
+
+.calendar-day-head-date {
+  width: 50%;
+  font-size: 3.6rem;
+  color: #243d6f;
+}
+
+.calendar-day-head-icons {
+  height: 3.6rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+ion-icon {
+  color: #8998b4;
+  display: block;
+  font-size: 3.6rem;
+}
+
+.calendar-day-head-icons-item:first-child {
+  margin-right: 2rem;
+}
+
+.calendar-day-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 84%;
+  padding-top: 5%;
+}
+
+.calendar-day-body-hour-slot {
+  flex: 1 1 auto;
+  position: relative;
+  height: 6.6%;
+  width: 95%;
+  border-top: 0.2rem solid #f3f3f3;
+}
+
+.calendar-day-body-hour-tag {
+  color: #a4b0c3;
+  display: block;
+  position: absolute;
+  font-size: 2.6rem;
+  left: -10rem;
+  top: -2rem;
+  background-color: #fff;
+}
+
+.calendar-day-body-event-tag {
+  display: flex;
+  align-items: center;
+  padding-left: 7rem;
+  border-left: 0.6rem solid;
+}
+
+.calendar-day-body-event {
+  display: block;
+  font-size: 2.8rem;
+  color: #243d6f;
+  z-index: 10;
+}
+
+.event-1 {
+  background-color: #8576ed26;
+  height: 100%;
+  border-color: #8576ed;
+}
+
+.event-2 {
+  background-color: #3d83f926;
+  height: 250%;
+  border-color: #3d83f9;
+}
+
+.event-3 {
+  background-color: #eea57c26;
+  height: 200%;
+  border-color: #eea57c;
+}
+
+aside {
+  width: 40%;
+  height: 95%;
+  background-color: lightsalmon;
+}
