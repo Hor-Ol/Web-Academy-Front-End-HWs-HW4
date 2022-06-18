@@ -223,17 +223,20 @@ aside {
 
 .calendar-month-body-your-categories-container {
   display: flex;
+  justify-content: stretch;
+  align-items: center;
   flex-wrap: wrap;
+  column-gap: 2rem;
 }
 
 .calendar-month-body-your-categories-container-box {
   font-size: 2.2rem;
   color: #fff;
-  width: 45%;
+  flex: 1 1 45%;
+  max-width: 50%;
   height: 8rem;
   border-radius: 1.2rem;
-  margin-right: 3rem;
-  margin-bottom: 3rem;
+  margin: 1rem 0rem;
   line-height: 8rem;
   text-align: center;
   font-weight: bold;
