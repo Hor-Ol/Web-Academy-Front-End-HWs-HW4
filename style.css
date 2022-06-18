@@ -2,11 +2,9 @@
   font-size: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  /* box-sizing: border-box; */
 }
 
 body {
-  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,4 +205,48 @@ aside {
   height: 8rem;
   border-radius: 50%;
   background-color: #3c82f9;
+}
+
+.calendar-month-body-your-categories {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.calendar-month-body-your-categories-title {
+  margin-bottom: 5rem;
+  font-size: 2.6rem;
+  color: #fff;
+}
+
+.calendar-month-body-your-categories-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar-month-body-your-categories-container-box {
+  font-size: 2.2rem;
+  color: #fff;
+  width: 45%;
+  height: 8rem;
+  border-radius: 1.2rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  line-height: 8rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.finance {
+  background-color: #8576ed;
+}
+
+.management {
+  background-color: #f39946;
+}
+
+.design {
+  background-color: #ff467e;
 }

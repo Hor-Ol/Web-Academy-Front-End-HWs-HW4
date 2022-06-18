@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <!-- FONTS -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,11 +15,18 @@
 
     <!-- CSS STYLESHEETS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- TITLE -->
     <title>Fluent Calendar</title>
+    <!-- TITLE TAB ICON -->
+    <link rel="icon" href="img/calendar-number-outline.svg">
   </head>
   <body>
+    <!-- DAY PART OF THE PAGE -->
     <main class="calendar-day">
       <div class="calendar-day-container">
+        
+        <!-- Day part of the page - header -->
         <div class="calendar-day-head">
           <span class="calendar-day-head-date">22 March 2022</span>
           <div class="calendar-day-head-icons">
@@ -35,9 +42,12 @@
             ></ion-icon>
           </div>
         </div>
+
+        <!-- Day part of the page - hours -->
         <div class="calendar-day-body">
           <div class="calendar-day-body-hour-slot">
             <span class="calendar-day-body-hour-tag">9:00</span>
+            <!-- Planned event number one -->
             <div class="calendar-day-body-event-tag event-1">
               <span class="calendar-day-body-event"
                 >Meet Sophia in airport</span
@@ -49,6 +59,7 @@
           </div>
           <div class="calendar-day-body-hour-slot">
             <span class="calendar-day-body-hour-tag">11:00</span>
+            <!-- Planned event number two -->
             <div class="calendar-day-body-event-tag event-2">
               <span class="calendar-day-body-event">Studio Workshop</span>
             </div>
@@ -64,6 +75,7 @@
           </div>
           <div class="calendar-day-body-hour-slot">
             <span class="calendar-day-body-hour-tag">15:00</span>
+            <!-- Planned event number 3 -->
             <div class="calendar-day-body-event-tag event-3">
               <span class="calendar-day-body-event"
                 >Design workshop with Johny Ive</span
@@ -88,8 +100,12 @@
         </div>
       </div>
     </main>
+
+    <!-- MONTH & CATEGORIES PART OF THE PAGE -->
     <aside class="calendar-month">
       <div class="calendar-month-container">
+
+        <!-- Month & Categories part of page - header -->
         <div class="calendar-month-head">
           <ion-icon
             class="calendar-month-head-icons"
@@ -101,7 +117,11 @@
             name="chevron-forward-outline"
           ></ion-icon>
         </div>
+
+        <!-- Month & Categories part of page - body -->
         <div class="calendar-month-body">
+
+          <!-- Month & Categories part of page - calendar table -->
           <table class="calendar-month-body-table">
               <thead>
                 <tr>
@@ -162,13 +182,22 @@
                 </tr>
               </tbody>
             </table>
+
+            <!-- Month & Categories part of page - your categories box -->
+          <div class="calendar-month-body-your-categories">
+            <span class="calendar-month-body-your-categories-title">Your categories</span>
+            <div class="calendar-month-body-your-categories-container">
+              <div class="calendar-month-body-your-categories-container-box finance">FINANCE</div>
+              <div class="calendar-month-body-your-categories-container-box management">MANAGEMENT</div>
+              <div class="calendar-month-body-your-categories-container-box design">DESIGN</div>
+            </div> 
+          </div>
           </tab>
         </div>
       </div>
     </aside>
 
-    <!-- SCRIPT FOR USING ION-ICONS -->
-
+    <!-- SCRIPTS FOR USING ION-ICONS -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -177,5 +206,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    
   </body>
 </html>
